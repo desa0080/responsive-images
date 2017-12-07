@@ -1,0 +1,48 @@
+ul {
+    list-style: none;
+}
+
+picture {
+    max-width: 90%;
+}    
+
+img {
+    max-width: 90%;
+    transition: transform 0.7s ease-out;
+    border: 7.5px double green;
+}
+
+img:hover {
+    transform: rotate(45deg);
+}
+
+li {
+    float: left;
+    margin-top: 3%;
+        
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 600px){
+    /*two columns*/
+    li{
+        width: 50%;
+    }
+    img:hover {
+        transform: skew(15deg, 15deg);
+    }
+  }
+    
+@media screen and (min-width: 1201px){
+    /* 4 columns*/
+    li{
+        width: 25%;
+    }
+    img:hover {
+        transform: translate(30px, 80px);
+    }
+    }
+  }
